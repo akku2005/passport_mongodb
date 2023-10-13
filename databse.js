@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 exports.connectMongoose =()=>{
-    mongoose.connect("")
+    mongoose.connect("//pass database url")
     .then((e)=>console.log(`connected to mongoDb:${e.connection.host}`))
     .catch((e)=>console.log(e));
 }
