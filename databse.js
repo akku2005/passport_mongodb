@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 exports.connectMongoose =()=>{
-    mongoose.connect("mongodb+srv://akashsahu:Akash%402005@akash.bawi1qx.mongodb.net/newUsers?retryWrites=true&w=majority")
+    mongoose.connect("")
     .then((e)=>console.log(`connected to mongoDb:${e.connection.host}`))
     .catch((e)=>console.log(e));
 }
